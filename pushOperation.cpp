@@ -27,6 +27,15 @@ void pop(){
         top--;
     }
 }
+int peek(){
+    if(top == -1){
+        cout<<"stack is empty"<<endl;
+        return -1;
+    }
+    else{
+        return arr[top];
+    }
+}
 };
 int main() {
     Stack st(5);   // Stack of size 5
@@ -43,8 +52,9 @@ int main() {
     // Printing stack elements
     cout << "Stack elements: ";
     for(int i = 0; i <= st.top; i++){
-        cout << st.arr[i] << " ";
+        cout<<st.arr[i] << " ";
     }
+    cout<<"\nTop Element "<<st.peek();
 
     return 0;
 }
