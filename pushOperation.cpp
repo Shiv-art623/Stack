@@ -36,6 +36,12 @@ int peek(){
         return arr[top];
     }
 }
+bool isEmpty(){
+    return top == -1;
+}
+int isSize(){
+    return top+1;
+}
 };
 int main() {
     Stack st(5);   // Stack of size 5
@@ -54,7 +60,8 @@ int main() {
     for(int i = 0; i <= st.top; i++){
         cout<<st.arr[i] << " ";
     }
-    cout<<"\nTop Element "<<st.peek();
-
+    cout<<"\nTop Element "<<st.peek()<<endl;;
+    cout<<st.isEmpty()<<endl;
+    cout<<st.isSize();
     return 0;
 }
