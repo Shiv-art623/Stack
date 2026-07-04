@@ -20,6 +20,13 @@ else{
     arr[top] = value;
 }
 }
+void pop(){
+    if(top == -1) cout<<"Stack underflow"<<endl;
+    else{
+        cout<<"Pooped  "<<arr[top]<<"  from the stack\n";
+        top--;
+    }
+}
 };
 int main() {
     Stack st(5);   // Stack of size 5
@@ -32,7 +39,7 @@ int main() {
 
     // This will cause overflow
     st.push(60);
-
+    st.pop();
     // Printing stack elements
     cout << "Stack elements: ";
     for(int i = 0; i <= st.top; i++){
