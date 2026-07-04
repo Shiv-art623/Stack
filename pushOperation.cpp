@@ -1,6 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
-
+//implement using array
 class Stack{
     public:
     int *arr;
