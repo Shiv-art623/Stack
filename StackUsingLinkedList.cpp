@@ -54,12 +54,26 @@ class Stack{
         }
         else return top->data;
     }
+
+    bool isEmpty(){
+        return top == NULL;
+    }
+
+    int isSize(){
+        return size;
+    }
 };
 int main(){
     Stack s;
     s.push(2);
-    cout<<s.peek();
+    s.push(4);
+    s.push(6);
+    s.push(8);
+    s.push(10);
+    cout<<s.peek()<<endl;
+    cout<<s.isSize()<<endl;
     s.pop();
-    cout<<s.peek();
+    cout<<s.peek()<<endl;
+    cout<<s.isEmpty();
     return 0;
 }
