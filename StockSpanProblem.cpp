@@ -25,3 +25,4 @@ int main(){
     }
     return 0;
 }
+//TC = O(n) and sc = O(n)
