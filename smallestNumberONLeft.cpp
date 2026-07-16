@@ -20,4 +20,4 @@ int main(){
         cout<<ans[i]<<" ";
     }
     return 0;
-}
+}//TC = O(n) and SC = O(n)
