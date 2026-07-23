@@ -23,4 +23,4 @@ int main(){
     }
 return 0;
 } 
-//has time complexity O(n^3)
+//has time complexity O(n^3) and SC O(n)
